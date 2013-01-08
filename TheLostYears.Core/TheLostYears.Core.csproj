@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8840C71E-68E7-4DB5-8E83-8315C96ADD84}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TheLostYears.Core</RootNamespace>
+    <AssemblyName>TheLostYears.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Boundaries\ICustomerBoundary.cs" />
+    <Compile Include="Boundaries\IOrderBoundary.cs" />
+    <Compile Include="Entities\Address.cs" />
+    <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\Interfaces\IAddressEntity.cs" />
+    <Compile Include="Entities\Interfaces\ICustomerEntity.cs" />
+    <Compile Include="Entities\Interfaces\IEntity.cs" />
+    <Compile Include="Entities\Interfaces\IOrderEntity.cs" />
+    <Compile Include="Entities\Interfaces\IPaymentEntity.cs" />
+    <Compile Include="Entities\Order.cs" />
+    <Compile Include="Entities\Payment.cs" />
+    <Compile Include="Interactors\IAddressInteractor.cs" />
+    <Compile Include="Interactors\ICustomerInteractor.cs" />
+    <Compile Include="Interactors\IOrderInteractor.cs" />
+    <Compile Include="Interactors\IPaymentInteractor.cs" />
+    <Compile Include="Model\Requests\ICreateCustomerRequest.cs" />
+    <Compile Include="Model\Requests\ICreateOrderRequest.cs" />
+    <Compile Include="Model\Requests\IPayForOrderRequest.cs" />
+    <Compile Include="Model\Requests\ISearchForOrderRequest.cs" />
+    <Compile Include="Model\Requests\IUpdateCustomerRequest.cs" />
+    <Compile Include="Model\Requests\IUpdateOrderRequest.cs" />
+    <Compile Include="Model\Requests\IViewCustomerAddressesRequest.cs" />
+    <Compile Include="Model\Requests\ISearchForCustomerRequest.cs" />
+    <Compile Include="Model\Responses\ICreateCustomerRequest.cs" />
+    <Compile Include="Model\Responses\ICreateOrderRequest.cs" />
+    <Compile Include="Model\Responses\IPayForOrderRequest.cs" />
+    <Compile Include="Model\Responses\ISearchForCustomerRequest.cs" />
+    <Compile Include="Model\Responses\ISearchForOrderRequest.cs" />
+    <Compile Include="Model\Responses\IUpdateCustomerRequest.cs" />
+    <Compile Include="Model\Responses\IUpdateOrderRequest.cs" />
+    <Compile Include="Model\Responses\IViewCustomerAddressesRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IAddressRepository.cs" />
+    <Compile Include="Repositories\ICustomerRepository.cs" />
+    <Compile Include="Repositories\IOrderRepository.cs" />
+    <Compile Include="Repositories\IPaymentRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

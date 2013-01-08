@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLostYears.Application", "TheLostYears.Application\TheLostYears.Application.csproj", "{3EB59014-D992-4105-8780-3F20F128E673}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLostYears.Core", "TheLostYears.Core\TheLostYears.Core.csproj", "{8840C71E-68E7-4DB5-8E83-8315C96ADD84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{BD472445-0D92-44F7-9905-C3D49AF94F3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{F1D515BE-DA94-4871-8D8C-23DDEA93B73C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Boundries", "Boundries", "{D885148E-54A3-475A-8F4C-C2A76718ECFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{E8F15DD4-E436-4834-8BB1-423C7BBAFDF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLostYears.Data.FluentNHibernate", "TheLostYears.Data.FluentNHibernate\TheLostYears.Data.FluentNHibernate.csproj", "{CED9B512-DB5F-4B03-8D87-E80F0B845B40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLostYears.Data.TextFile", "TheLostYears.Data.TextFile\TheLostYears.Data.TextFile.csproj", "{B63606E5-45CD-4918-A628-FF55B6E3A419}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EB59014-D992-4105-8780-3F20F128E673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EB59014-D992-4105-8780-3F20F128E673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EB59014-D992-4105-8780-3F20F128E673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EB59014-D992-4105-8780-3F20F128E673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8840C71E-68E7-4DB5-8E83-8315C96ADD84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8840C71E-68E7-4DB5-8E83-8315C96ADD84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8840C71E-68E7-4DB5-8E83-8315C96ADD84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8840C71E-68E7-4DB5-8E83-8315C96ADD84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CED9B512-DB5F-4B03-8D87-E80F0B845B40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CED9B512-DB5F-4B03-8D87-E80F0B845B40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CED9B512-DB5F-4B03-8D87-E80F0B845B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CED9B512-DB5F-4B03-8D87-E80F0B845B40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B63606E5-45CD-4918-A628-FF55B6E3A419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B63606E5-45CD-4918-A628-FF55B6E3A419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B63606E5-45CD-4918-A628-FF55B6E3A419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B63606E5-45CD-4918-A628-FF55B6E3A419}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CED9B512-DB5F-4B03-8D87-E80F0B845B40} = {F1D515BE-DA94-4871-8D8C-23DDEA93B73C}
+		{B63606E5-45CD-4918-A628-FF55B6E3A419} = {F1D515BE-DA94-4871-8D8C-23DDEA93B73C}
+		{3EB59014-D992-4105-8780-3F20F128E673} = {E8F15DD4-E436-4834-8BB1-423C7BBAFDF7}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TheLostYears.Core.Entities.Interfaces
+{
+    public interface IPaymentEntity : IEntity
+    {
+        int Id { get; set; }
+
+        IOrderEntity Order { get; set; }
+
+        IAddressEntity BillingAddress { get; set; }
+
+        decimal TotalPaid { get; set; }
+    }
+}
